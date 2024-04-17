@@ -15,7 +15,7 @@ fn main() {
     loop {
         println!("Enter your guess:");
 
-        let mut guess = String::new();
+        let mut guess = String::new(); // define que o numero é mutavel mut
 
         // o read_line retorna um tipo io::Result e o expect trata oq foi retornado
         io::stdin().read_line(&mut guess).expect("Error read entry");
