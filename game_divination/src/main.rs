@@ -1,3 +1,4 @@
+
 extern crate rand; // puxa uma lib(dependencia) externa que não tenha por padrao no rust
 
 use std::io; // lib
@@ -11,12 +12,10 @@ fn main() {
     // thread_rng iniciaza uma thead concorente local
     // entao chamamos o gen_range para gerar o numero aleatorio
     let secret_number = rand::thread_rng().gen_range(1, 101);
-
     loop {
         println!("Enter your guess:");
 
         let mut guess = String::new(); // define que o numero é mutavel mut
-
         // o read_line retorna um tipo io::Result e o expect trata oq foi retornado
         io::stdin().read_line(&mut guess).expect("Error read entry");
         // transforma guess em um numero sem sinal (u32) o trim elimina espacos em branco
