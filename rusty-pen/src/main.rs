@@ -10,8 +10,9 @@ fn main() {
         pen: Pen::new(400.0, 0.0, 200.0),
         pen2: Pen::new(400.0, 0.0, 400.0)
     };
-
+    
     window.run_loop(win);
+
 }
 
 struct MyWindowHandler {
@@ -63,8 +64,8 @@ impl Pen {
             angular_velocity: 0.0, 
             angular_acceleration: 0.0, 
             r: r, 
-            m: 5.0, 
-            g: 2.9,
+            m: 1.0, 
+            g: 1.5,
         }
     }
 
